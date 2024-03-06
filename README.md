@@ -1,4 +1,4 @@
-Contexte du projet
+Contexte du projet.
 L’objectif est de créer une application SPA (single page application), c’est à dire créer un site contenant une unique page qui ne sera pas rechargée lorsqu’une action y sera menée.
 
 Dans notre cas, cela s’articulera autour d’une liste de tâches, aussi appelée “todo list”. Lorsque l’utilisateur interagit avec la page web, pour créer une nouvelle tâche ou en valider une, la page ne sera pas rechargée grâce AJAX (Asynchronous JavaScript And XML).
