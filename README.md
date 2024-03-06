@@ -16,12 +16,19 @@ Dans une démarche de gain de temps, vous devrez utiliser des composants Bootstr
 Liste des actions réalisables dans la liste des tâches :
 
 Créer une tâche.
+
 Consulter le détail d’une tâche.
+
 Valider une tâche.
+
 Mettre à jour une tâche.
 ​
 Liste des livrables :
+
 MCD de la base de données.
+
 Maquettes / wireframes.
+
 Dépôt GitHub avec README.
+
 Rendu Simplonline avec le lien des différents livrables (vérifier qu'ils soient accessibles publiquement).
