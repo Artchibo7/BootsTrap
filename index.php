@@ -12,6 +12,9 @@
 <body>
     <?php include "./composants/nawbar.php"; ?>
     <?php include "./composants/listedestaches.php"; ?>
+    <?php include "./composants/bouton.php"; ?>
+    <?php include "./composants/formulaire.php"; ?>
+    
     
 </body>
 </html>
