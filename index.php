@@ -13,7 +13,9 @@
     <?php include "./composants/nawbar.php"; ?>
     <?php include "./composants/listedestaches.php"; ?>
     <?php include "./composants/bouton.php"; ?>
-    <?php include "./composants/formulaire.php"; ?>
+    <!-- <?php include "./composants/formulaire.php"; ?> -->
+    <!-- <?php include "./composants/inscription.php"; ?> -->
+    <?php include "./composants/tooltips.php"; ?>
     
     
 </body>

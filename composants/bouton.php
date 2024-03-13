@@ -11,8 +11,8 @@
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Urgent</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">prioritaire</a></li>
+    <li><a class="dropdown-item" href="#">Important</a></li>
     <li><hr class="dropdown-divider"></li
-    <li><a class="dropdown-item" href="#">secondaire</a></li>
+    <li><a class="dropdown-item" href="#">Normal</a></li>
   </ul>
 </div>

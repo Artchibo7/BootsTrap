@@ -1,43 +1,93 @@
-
+<?php
+?>
 <nav class="navbar navbar-expand-lg" style="background-color: cyan;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="./images/task.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      LISTES DE TACHES!!!
-    </a>
-  </div>
-</nav>
-
+    <a class="navbar-brand" href="#"> <img src="./images/task.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      LISTES DE TACHES!!!</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <ul class="navbar-nav ms-auto gap-2">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo">Sign up!</button>
+          <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <!-- <label for="recipient-name" class="col-form-label">Name:</label>
+                      <input type="text" class="form-control" id="recipient-name"> -->
+                      <label for="validationServer02" class="form-label">Last name</label>
+                      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                    </div>
+                    <div class="mb-3">
+                      <!-- <label for="recipient-name" class="col-form-label">Surname:</label>
+                      <input type="text" class="form-control" id="recipient-name"> -->
+                      <label for="validationServer01" class="form-label">First name</label>
+                      <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="text" class="col-form-label">Password:</label>
+                      <input class="form-control" id="text">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Submit!</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
+
+
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#connexion" data-bs-whatever="@mdo">Connexion!</button>
+          <div class="modal fade" id="connexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Connexion</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+
+
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <button type="button" class="btn btn-warning">Deconnexion</button>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
