@@ -22,24 +22,20 @@
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
-                      <!-- <label for="recipient-name" class="col-form-label">Name:</label>
-                      <input type="text" class="form-control" id="recipient-name"> -->
-                      <label for="validationServer02" class="form-label">Last name</label>
-                      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                      <label for="validationServer02" class="form-label"></label>
+                      <input type="text" class="form-control" id="validationServer02" placeholder="firstname" min="3" max="50"  required">
                     </div>
                     <div class="mb-3">
-                      <!-- <label for="recipient-name" class="col-form-label">Surname:</label>
-                      <input type="text" class="form-control" id="recipient-name"> -->
-                      <label for="validationServer01" class="form-label">First name</label>
-                      <input type="text" class="form-control is-valid" id="validationServer01" required>
+                      <label for="validationServer01" class="form-label"></label>
+                      <input type="text" class="form-control" id="validationServer01" placeholder="lastname" min="3" max="50" required">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      <label for="exampleFormControlInput1" class="form-label"></label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" min="3" max="80" required>
                     </div>
                     <div class="mb-3">
-                      <label for="text" class="col-form-label">Password:</label>
-                      <input class="form-control" id="text">
+                      <label for="password" class="col-form-label"></label>
+                      <input type="password" class="form-control" id="password" placeholder="Password" min="7" required>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
