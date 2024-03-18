@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient( 135deg, #153677, #4e085f);
+}
+
+#nawbar{
+    background: linear-gradient( 100deg, #e78e08, #cc156a);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 30px 80px 30px 80px;
+}
+
+#signup, #signin{
+    background: linear-gradient( 100deg, #e78e08, #cc156a);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#taches{
+    background: linear-gradient( 100deg, #e78e08, #cc156a);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin : 30px 80px 30px;
+    padding: 10px 50px 10px 50px;
+}
+.list-group-item{
+    background: linear-gradient( -60deg, #64dd08, #05b3e8);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 10px;
+}

@@ -1,6 +1,6 @@
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-danger">Urgent</button
+<button type="button" class="btn btn-danger">Urgent</button>
+<button type="button" class="btn btn-primary">Important</button>
+<button type="button" class="btn btn-secondary">Normal</button>
 
 
 <!-- Example single danger button -->
@@ -9,10 +9,10 @@
     Action
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Urgent</a></li>
+    <li><a class="dropdown-item btn btn-danger" href="#">Urgent</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Important</a></li>
+    <li><a class="dropdown-item btn btn-primary" href="#">Important</a></li>
     <li><hr class="dropdown-divider"></li
-    <li><a class="dropdown-item" href="#">Normal</a></li>
+    <li><a class="dropdown-item btn btn-secondary" href="#">Normal</a></li>
   </ul>
 </div>
