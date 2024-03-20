@@ -1,4 +1,7 @@
 <?php
+require_once __DIR__ . "./databse.php";
+require_once __DIR__ . "./../repository/usersRepository.php";
+
 
 class User {
 

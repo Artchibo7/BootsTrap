@@ -4,14 +4,14 @@ class Task {
     private $title;
     private $description;
     private $date;
-    private $priority;
+    private $priorities;
     private $categories;
 
-    public function __construct($title, $description, $date, $priority, $categories) {
+    public function __construct($title, $description, $date, $priorities, $categories) {
         $this->title = $title;
         $this->description = $description;
         $this->date = $date;
-        $this->priority = $priority;
+        $this->priorities = $priorities;
         $this->categories = $categories;    
     }
 
@@ -42,12 +42,12 @@ class Task {
         $this->date = $date;
     }
 
-    public function getPriority() {
-        return $this->priority;
+    public function getPriorities() {
+        return $this->priorities;
     }
 
-    public function setPriority($priority) {
-        $this->priority = $priority;
+    public function setPriorities($priorities) {
+        $this->priorities = $priorities;
     }
 
     public function getCategories() {

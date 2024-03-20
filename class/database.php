@@ -3,6 +3,8 @@
 require_once __DIR__ . "./../config.php";
 require_once __DIR__ . "./../class/users.php";
 require_once __DIR__ . "./../class/task.php";
+require_once __DIR__ . "./../class/priorities.php";
+require_once __DIR__ . "./../class/categories.php";
 
 Class Db{
     private $db;

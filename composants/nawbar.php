@@ -9,18 +9,18 @@
 
       <ul class="navbar-nav ms-auto gap-2" id="nawbarList">
         <li class="nav-item">
-          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo">Sign up</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo">Signup</button>
           <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="color: black;">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up!</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Registration!</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
+                <div class="modal-body" id="signupForm">
 
-                  <form id="signupForm">
+                  <form id="">
 
                     <div class="mb-3">
                       <label for="validationServer02" class="form-label"></label>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" id="signupSubmitButton">Submit!</button>
+                      <button type="button" class="btn btn-success" id="signupSubmitButton" onclick="signup()">Submit!</button>
                       <!--  onclick si addevenlistenr ne fonctione pas -->
                     </div>
 
@@ -61,15 +61,15 @@
 
 
         <li class="nav-item">
-          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo">Sign in</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo">Login</button>
           <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="color: black">
               <div class="modal-content" id>
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in!</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Login!</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="signinForm">
                   <form>
 
                     <div class="mb-3">
@@ -84,7 +84,7 @@
 
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" id="signinButton">Sign in</button>
+                      <button type="button" class="btn btn-success" id="signinButton">Login</button>
                     </div>
 
                   </form>
@@ -96,7 +96,7 @@
 
 
         <li class="nav-item">
-          <button type="button" class="btn btn-warning" id="deconnexion">Deconnexion</button>
+          <button type="button" class="btn btn-warning" id="deconnexion">Logout</button>
         </li>
 
       </ul>

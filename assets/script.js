@@ -1,11 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+ function signup(){
 
-    const signupForm = document.getElementById('signupForm');
-
-
-    if (signupForm) {
      
-        signupForm.addEventListener('submit', function(event) {
+        signup.addEventListener('submit', function(event) {
 
             event.preventDefault();
 
@@ -15,14 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const password = document.getElementById('password').value;
             const passwordConfirm = document.getElementById('passwordConfirm').value
 
-            // Affichez les valeurs dans la console à titre d'exemple
-            console.log("Firstname:", firstname);
-            console.log("Lastname:", lastname);
-            console.log("Email:", email);
-            console.log("Password:", password);
-            console.log("PasswordConfirm:", passwordConfirm);
-
-            fetch("./treitement.php", {
+            fetch("config.php", {
                 method: 'POST',
                 body: JSON.stringify({
                     firstname: firstname,
@@ -40,5 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Erreur lors de la soumission du formulaire:', error);
             });
         });
-    }
-});
+    };

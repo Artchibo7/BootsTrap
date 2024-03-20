@@ -2,6 +2,9 @@
 
 require_once __DIR__ . "./../class/databse.php";
 require_once __DIR__ . "./../class/user.php";
+require_once __DIR__ . "./../class/priorities.php";
+require_once __DIR__ . "./../class/categories.php";
+
 
 class userRepository extends Db {
     public function getAll() {
