@@ -15,23 +15,25 @@ body{
 
 #signupForm, #signinForm{
     background: linear-gradient( 135deg, #153677, #4e085f);
+    border: #05b3e8 5px solid;
     color: white;
     font-weight: bold;
     border-radius: 5px;
 }
-
+/* 
 #signup, #signin{
     background: linear-gradient( 100deg, #e78e08, #cc156a);
     color: white;
     font-weight: bold;
     border-radius: 5px;
-}
+} */
 
 #dropdown{
     margin-left: 80px;
 }
 #dropdown-menu{
-    background: linear-gradient( -135deg, #153677, #4e085f);
+    background: linear-gradient( 100deg, #1e8ead, #0cd4b3);
+    border: #f3f6f8 5px solid;
     color: white;
     font-weight: bold;
     border-radius: 5px;

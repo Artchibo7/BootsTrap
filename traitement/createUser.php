@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . "./../class/database.php";
 require_once __DIR__ . "./../class/users.php";
 require_once __DIR__ . "./../repository/usersRepository.php";
 
@@ -16,6 +17,8 @@ if (
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
     $passwordConfirm = htmlspecialchars($_POST['passwordConfirm']);
+
+
 
     $newUser = new User(
         null,
@@ -41,6 +44,6 @@ if (
 
     $userRepository->create($newUser);
 
-    header('Location: ./../index.php');
+    header('Location: ./../treitement.php');
 }
 

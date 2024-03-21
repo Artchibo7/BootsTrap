@@ -13,23 +13,23 @@
           <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="color: black;">
               <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: cyan;">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">Registration!</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body" id="signupForm">
 
-                  <form id="">
+                  <form id="inscription">
 
                     <div class="mb-3">
-                      <label for="validationServer02" class="form-label"></label>
-                      <input type="text" class="form-control" id="validationServer02" placeholder="firstname" min="3" max="50" required">
+                      <label for="firstname" class="form-label"></label>
+                      <input type="text" class="form-control" id="firstname" placeholder="firstname" min="3" max="50" required">
                     </div>
 
                     <div class="mb-3">
-                      <label for="validationServer01" class="form-label"></label>
-                      <input type="text" class="form-control" id="validationServer01" placeholder="lastname" min="3" max="50" required">
+                      <label for="lastname" class="form-label"></label>
+                      <input type="text" class="form-control" id="lastname" placeholder="lastname" min="3" max="50" required">
                     </div>
 
                     <div class="mb-3">
@@ -48,9 +48,11 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success" id="signupSubmitButton" onclick="signup()">Submit!</button>
+                      <button type="submit" class="btn btn-success" id="signupSubmitButton">Submit!</button>
                       <!--  onclick si addevenlistenr ne fonctione pas -->
                     </div>
+
+                    <p id="erreur"></p>
 
                   </form>
                 </div>
@@ -65,7 +67,7 @@
           <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="color: black">
               <div class="modal-content" id>
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: cyan;">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">Login!</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -78,7 +80,7 @@
                     </div>
 
                     <div class="mb-3">
-                      <label for="password1" class="col-form-label"></label>
+                      <label for="password" class="col-form-label"></label>
                       <input type="password" class="form-control" id="password1" placeholder="Password" min="7" required>
                     </div>
 

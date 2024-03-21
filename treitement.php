@@ -1,8 +1,10 @@
 <?php
 
 if (!empty(file_get_contents('php://input'))) {
-  $mdp = password_hash(file_get_contents('php://input'), PASSWORD_DEFAULT);
+  $data = json_decode(file_get_contents('php://input'));
 
   header('Content-Type: application/json');
-  echo json_encode($mdp);
+
+  var_dump($data);
+  // echo json_encode("Bonjour " . $data->prenom . ", tu as " . $data->nom . " ans. <br>");
 }

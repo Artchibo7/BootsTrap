@@ -1,5 +1,8 @@
 <?php
 
+require_once __DIR__ . "./../class/database.php";
+require_once __DIR__ . "./../repository/priorityRepository.php";
+
 class Priority {
     private $id;
     private $normal;
@@ -7,6 +10,7 @@ class Priority {
     private $urgent;
 
     public function __construct($id, $normal, $important, $urgent) {
+        $this->id = $id;
         $this->normal = $normal;
         $this->important = $important;
         $this->urgent = $urgent;

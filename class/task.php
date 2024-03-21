@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "./../class/database.php";
+require_once __DIR__ . "./../repository/taskRepository.php";
 class Task {
     private $title;
     private $description;

@@ -1,54 +1,57 @@
 <?php
 
+require_once __DIR__ . "./../class/database.php";
+require_once __DIR__ . "./../repository/categoriesRepository.php";
+
 class Categories{
     private $id;
-    private $personnel;
-    private $travail;
-    private $famille;
-    private $amis;
+    private $personal;
+    private $work;
+    private $family;
+    private $friends;
 
 
-    public function __construct($id, $personnel, $travail, $famille, $amis) {
+    public function __construct($id, $personal, $work, $family, $friends) {
         $this->id = $id;
-        $this->personnel = $personnel;
-        $this->travail = $travail;
-        $this->famille = $famille;
-        $this->amis = $amis;
+        $this->personal = $personal;
+        $this->work = $work;
+        $this->family = $family;
+        $this->friends = $friends;
     }
 
     public function getId() {
         return $this->id;
     }
     
-    public function getPersonnel() {
-        return $this->personnel;
+    public function getpersonal() {
+        return $this->personal;
     }
 
-    public function setPersonnel($personnel) {
-        $this->personnel = $personnel;
+    public function setpersonal($personal) {
+        $this->personal = $personal;
     }
 
-    public function getTravail() {
-        return $this->travail;
+    public function getwork() {
+        return $this->work;
     }
 
-    public function setTravail($travail) {
-        $this->travail = $travail;
+    public function setwork($work) {
+        $this->work = $work;
     }
 
-    public function getFamille() {
-        return $this->famille;
+    public function getfamily() {
+        return $this->family;
     }
 
-    public function setFamille($famille) {
-        $this->famille = $famille;
+    public function setfamily($family) {
+        $this->family = $family;
     }
 
-    public function getAmis() {
-        return $this->amis;
+    public function getfriends() {
+        return $this->friends;
     }
 
-    public function setAmis($amis) {
-        $this->amis = $amis;
+    public function setfriends($friends) {
+        $this->friends = $friends;
     }
 }
