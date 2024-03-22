@@ -1,34 +1,43 @@
-Contexte du projet.
+# Projet TodoList en PHP
 
-L’objectif est de créer une application SPA (single page application), c’est à dire créer un site contenant une unique page qui ne sera pas rechargée lorsqu’une action y sera menée.
+Ce projet consiste à créer une application SPA (Single Page Application) pour gérer une liste de tâches, également connue sous le nom de "todo list". L'objectif est de permettre à l'utilisateur d'interagir avec la page web sans qu'elle ne soit rechargée à chaque action, grâce à AJAX (Asynchronous JavaScript And XML). Le traitement des données sera effectué en utilisant des requêtes envoyées au backend en PHP, et les données seront stockées dans une base de données MySQL à laquelle nous communiquerons via PHP et PDO. Pour accélérer le processus d'intégration, nous utiliserons des composants Bootstrap.
 
-Dans notre cas, cela s’articulera autour d’une liste de tâches, aussi appelée “todo list”. Lorsque l’utilisateur interagit avec la page web, pour créer une nouvelle tâche ou en valider une, la page ne sera pas rechargée grâce AJAX (Asynchronous JavaScript And XML).
+## Fonctionnalités
 
+- **Créer une tâche**: Permet à l'utilisateur d'ajouter une nouvelle tâche à la liste.
+- **Consulter le détail d'une tâche**: Permet à l'utilisateur de voir les détails d'une tâche spécifique.
+- **Valider une tâche**: Permet à l'utilisateur de marquer une tâche comme étant terminée.
+- **Mettre à jour une tâche**: Permet à l'utilisateur de modifier les détails d'une tâche existante.
 
-Le traitement des données se fera par l’intermédiaire de requêtes envoyés au backend en PHP.
+## Livrables
 
-Les données seront stockées dans une base de données créée spécialement pour le brief. Vous communiquerez avec cette dernière par l’intermédiaire de PHP et PDO.
+1. **MCD de la base de données**: Modèle Conceptuel de Données représentant la structure de la base de données utilisée pour stocker les tâches.
 
-Dans une démarche de gain de temps, vous devrez utiliser des composants Bootstrap pour accélérer l’intégration de la todolist.
+2. **Maquettes / Wireframes**: Représentation visuelle de l'interface utilisateur de l'application, montrant la disposition des éléments et les interactions possibles.
 
-🚨 L'ensemble des informations se trouvent dans le cahier des charges ci-joint.
+3. **Dépôt GitHub avec README**: Le code source du projet sera disponible sur GitHub, accompagné d'un fichier README décrivant les étapes d'installation, de configuration et d'exécution du projet.
 
-Liste des actions réalisables dans la liste des tâches :
+4. **Rendu Simplonline**: Les différents livrables seront rendus accessibles publiquement via Simplonline, accompagnés d'un lien pour y accéder.
 
-Créer une tâche.
+## Technologies Utilisées
 
-Consulter le détail d’une tâche.
+- PHP pour le backend
+- MySQL pour la base de données
+- Bootstrap pour l'interface utilisateur
 
-Valider une tâche.
+## Installation et Configuration
 
-Mettre à jour une tâche.
-​
-Liste des livrables :
+1. Cloner le dépôt GitHub du projet : `[git clone <URL_du_dépôt>](https://github.com/Artchibo7/Brief4_To-doList_avec_BootsTrap)`
+2. Importer la base de données en utilisant le fichier SQL fourni.
+3. Configurer les paramètres de connexion à la base de données dans le fichier `config.php`.
+4. Ouvrir l'application dans un navigateur web.
 
-MCD de la base de données.
+## Contributeurs
 
-Maquettes / wireframes.
+-Zulpukharov Arthur - Développeur principal
 
-Dépôt GitHub avec README.
+## Licence
 
-Rendu Simplonline avec le lien des différents livrables (vérifier qu'ils soient accessibles publiquement).
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+Pour toute question ou suggestion, veuillez contacter [votre email].
