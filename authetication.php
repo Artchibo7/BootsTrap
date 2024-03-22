@@ -5,7 +5,7 @@ require_once __DIR__ . "/class/database.php";
 require_once __DIR__ . "./class/users.php";
 
 
-$Database = new Db();
+$Database = new Database();
 
 if(isset($_POST["mail"]) && isset($_POST["password"]) && !empty($_POST["mail"]) && !empty($_POST["password"])) {
 

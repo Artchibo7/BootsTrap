@@ -5,11 +5,13 @@
     <ul class="dropdown-menu" id="dropdown-menu">
         <div class="mb-3">
             <label for="TaskName" class="form-label"></label>
-            <input type="text" class="form-control" id="TaskName" placeholder="Task name" required">
+            <input type="text" name="TaskName" class="form-control" id="TaskName" placeholder="Task name" required">
         </div>
-        <ul id="ListContainer">
-            
-        </ul>
+        <!-- <ul id="ListContainer">
+            <li>t</li>
+            <li>t</li>
+            <li>t</li>
+        </ul> -->
 
         <div class="input-group mb-3">
             <label for="Priority" style="background-color: purple;">Priority</label>

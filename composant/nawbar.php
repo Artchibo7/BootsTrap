@@ -20,31 +20,31 @@
 
                 <div class="modal-body" id="signupForm">
 
-                  <form id="inscription">
+                  <form id="inscription"  action="treatmentSingup.php" method="POST">
 
                     <div class="mb-3">
                       <label for="firstname" class="form-label"></label>
-                      <input type="text" class="form-control" id="firstname" placeholder="firstname" min="3" max="50" required">
+                      <input type="text" class="form-control" name="firstname" id="firstname" placeholder="firstname" min="3" max="50" required">
                     </div>
 
                     <div class="mb-3">
                       <label for="lastname" class="form-label"></label>
-                      <input type="text" class="form-control" id="lastname" placeholder="lastname" min="3" max="50" required">
+                      <input type="text" class="form-control" name="lastname" id="lastname" placeholder="lastname" min="3" max="50" required">
                     </div>
 
                     <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"></label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" min="3" max="80" required>
-                    </div>
-
-                    <div class="mb-3">
-                      <label for="password" class="col-form-label"></label>
-                      <input type="password" class="form-control" id="password" placeholder="Password" min="7" required>
+                      <label for="email" class="form-label"></label>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" min="3" max="80" required>
                     </div>
 
                     <div class="mb-3">
                       <label for="password" class="col-form-label"></label>
-                      <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm Password" min="7" required>
+                      <input type="password" name="password" class="form-control" id="password" placeholder="Password" min="7" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="passwordConfirm" class="col-form-label"></label>
+                      <input type="password" name="passwordConfirm" class="form-control" id="passwordConfirm" placeholder="Confirm Password" min="7" required>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -72,21 +72,23 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" id="signinForm">
-                  <form>
+
+
+                  <form id="login" action="treatmentSignin.php" method="POST">
 
                     <div class="mb-3">
-                      <label for="exampleFormControlInput2" class="form-label"></label>
-                      <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" min="3" max="80" required>
+                      <label for="email1" class="form-label"></label>
+                      <input type="email" name="email" class="form-control" id="email1" placeholder="name@example.com" min="3" max="80" required>
                     </div>
 
                     <div class="mb-3">
-                      <label for="password" class="col-form-label"></label>
-                      <input type="password" class="form-control" id="password1" placeholder="Password" min="7" required>
+                      <label for="passwordSignIn" class="col-form-label"></label>
+                      <input type="password" name="password" class="form-control" id="passwordSignIn" placeholder="Password" min="7" required>
                     </div>
 
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success" id="signinButton">Login</button>
+                      <button type="submit" class="btn btn-success" id="signinButton">Login</button>
                     </div>
 
                   </form>
@@ -97,9 +99,6 @@
         </li>
 
 
-        <li class="nav-item">
-          <button type="button" class="btn btn-warning" id="deconnexion">Logout</button>
-        </li>
 
       </ul>
     </div>

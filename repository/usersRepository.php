@@ -1,24 +1,24 @@
 <?php
 
-require_once __DIR__ . "./../class/databse.php";
-require_once __DIR__ . "./../class/user.php";
-require_once __DIR__ . "./../class/priorities.php";
-require_once __DIR__ . "./../class/categories.php";
+require_once __DIR__ . "/../class/Database.php";
+require_once __DIR__ . "/../class/User.php";
+// require_once __DIR__ . "./../class/priorities.php";
+// require_once __DIR__ . "./../class/categories.php";
 
 
-class userRepository extends Db {
+class UserRepository extends Database {
     public function getAll() {
-        $data = $this->getDb()->query("SELECT * FROM users");
+        $data = $this->getDB()->query("SELECT * FROM todo_users");
 
         $users = [];
 
-        foreach ($data as $userData) {
+        foreach ($data as $user) {
             $newUser = new User(
-                $userData['id'],
-                $userData['firstname'],
-                $userData['lastname'],
-                $userData['email'],
-                $userData['password']
+                $user['userID'],
+                $user['firstname'],
+                $user['lastname'],
+                $user['email'],
+                $user['password']
             );
 
             $users[] = $newUser;
@@ -28,35 +28,39 @@ class userRepository extends Db {
     }
 
     public function create($newUser) {
-        $request = "INSERT INTO users (id, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)";
-        $query = $this->getDb()->prepare($request);
+        $request = "INSERT INTO todo_users (userID, firstname, lastname, email, password) VALUES (:userID, :firstname, :lastname, :email, :password)";
+        $query = $this->getDB()->prepare($request);
 
         $query->execute([
-            $newUser->getId(),
-            $newUser->getFirstname(),
-            $newUser->getLastname(),
-            $newUser->getEmail(),
-            $newUser->getPassword()
+            ":userID" => $newUser->getUserID(),
+            ":firstname" => $newUser->getFirstname(),
+            ":lastname" => $newUser->getLastname(),
+            ":email"  => $newUser->getEmail(),
+            ":password" => $newUser->getPassword(),
         ]);
     }
 
     public function update($user) {
         $request = "UPDATE users SET firstname = ?, lastname = ?, email = ?, password = ? WHERE id = ?";
-        $query = $this->getDb()->prepare($request);
+        $query = $this->getDB()->prepare($request);
 
         $query->execute([
             $user->getFirstname(),
             $user->getLastname(),
             $user->getEmail(),
             $user->getPassword(),
-            $user->getId()
+            $user->getUserID()
         ]);
     }
+    public function delete($userID)
+{
+    // Assuming $_SESSION['user'] holds the userID
+    $request = 'DELETE FROM todo_users WHERE userID = :userID';
 
-    public function delete($userId) {
-        $request = "DELETE FROM users WHERE id = ?";
-        $query = $this->getDb()->prepare($request);
+    $query = $this->getDB()->prepare($request);
 
-        $query->execute([$userId]);
-    }
+    $query->execute([
+        'userID' => $_SESSION['user'] 
+    ]);
+}
 }

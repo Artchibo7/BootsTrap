@@ -1,12 +1,12 @@
 <?php
 
-require_once __DIR__ . "./../class/database.php";
-require_once __DIR__ . "./../class/task.php";
+require_once __DIR__ . "/../class/Database.php";
+require_once __DIR__ . "/../class/Task.php";
 
-class taskRepository extends Db {
+class taskRepository extends Database {
 
     public function getAll() {
-        $data = $this->getDb()->query("SELECT * FROM task");
+        $data = $this->getDb()->query("SELECT * FROM todo_task");
 
         $task = [];
 
@@ -27,7 +27,7 @@ class taskRepository extends Db {
     }
 
     public function create($newTask) {
-        $request = "INSERT INTO task (title, description, date, priority, categories) VALUES (?, ?, ?, ?, ?)";
+        $request = "INSERT INTO todo_task (title, description, date, priority, categories) VALUES (:title, :description, :date, :priority, :categories)";
         $query = $this->getDb()->prepare($request);
 
         $query->execute([

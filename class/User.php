@@ -1,22 +1,23 @@
 <?php
-require_once __DIR__ . "./databse.php";
-require_once __DIR__ . "./../repository/usersRepository.php";
+require_once __DIR__ . "/../class/Database.php";
+require_once __DIR__ . "/../repository/UsersRepository.php";
 
 
 class User {
 
+    private  $userID;
     private  $firstname;
     private  $lastname;
     private  $email;
     private  $password;
-    private  $passwordConfirm;
 
-    public function __construct($firstname, $lastname, $email, $password, $passwordConfirm) {
+    public function __construct( $userID, $firstname, $lastname, $email, $password) {
+        $this->userID = $userID;
         $this->firstname = $firstname;
         $this->lastname = $lastname;
         $this->email = $email;
         $this->password = $password;
-        $this->passwordConfirm = $passwordConfirm;
+        
     }
 
     public function getFirstname() {
@@ -47,10 +48,21 @@ class User {
         $this->password = $password;
     }
 
-    public function getPasswordConfirm() {
-        return $this->passwordConfirm;
+    /**
+     * Get the value of userID
+     */
+    public function getUserID()
+    {
+        return $this->userID;
     }
-    public function setPasswordConfirm($passwordConfirm) {
-        $this->passwordConfirm = $passwordConfirm;
+
+    /**
+     * Set the value of userID
+     */
+    public function setUserID($userID): self
+    {
+        $this->userID = $userID;
+
+        return $this;
     }
 }

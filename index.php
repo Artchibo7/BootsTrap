@@ -1,4 +1,7 @@
 <?php
+session_start();
+require_once "./repository/UsersRepository.php" ;
+$userRepository = new UserRepository();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,19 +18,18 @@
     <title>ToDoList!!!</title>
 </head>
 
-<?php
-// if(isset)
-
-?>
-
 <body>
-    <?php include "./composant/nawbar.php"; ?>
-    <?php include "./composant/addtask.php"; ?>
-    <?php include "./composant/listedestaches.php"; ?>
-    <?php include "./composant/bouton.php"; ?>
-    <?php include "./composant/ToastTooltips.php"; ?>
+    <?php
+    if (isset($_SESSION['connected'])) {
+        include "./composant/addtask.php";
+        include "./composant/listedestaches.php";
+        include "./composant/bouton.php";
+        include "./composant/ToastTooltips.php";
+        include "./composant/myAccount.php";
 
-
+    } else {
+        include "./composant/nawbar.php";
+    }
+    ?>
 </body>
-
 </html>
