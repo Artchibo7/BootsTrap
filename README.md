@@ -35,9 +35,3 @@ Ce projet consiste à créer une application SPA (Single Page Application) pour 
 ## Contributeurs
 
 -Zulpukharov Arthur - Développeur principal
-
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-Pour toute question ou suggestion, veuillez contacter [votre email].
